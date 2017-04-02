@@ -67,7 +67,7 @@ initial-scale=1.0"/>
 	    <%= yield %>
   <%=  render 'layouts/footer' %>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8p1COCk1C8NniHYW-43p7AdJRxUMDGBw&callback=initMap">
+            src="<%= ENV["GOOGLE_API_KEY"] %>">
     </script>
   </body>
 </html>
