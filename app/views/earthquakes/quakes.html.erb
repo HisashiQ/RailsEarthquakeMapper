@@ -1,0 +1,36 @@
+<%= render 'layouts/nav' %>
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<h5>Below is a table of all earthquakes that were recorded by the USGS yesterday, order by magnitude</h5>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col s12">
+			<table>
+				<thead>
+				<tr>
+					<th>Magnitude</th>
+					<th>Place</th>
+					<th>Longitude</th>
+					<th>Latitude</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<% @earthquakes.each do |q| %>
+				<tr>
+					<td><%= q.mag %></td>
+					<td><%= q.place %></td>
+					<td><%= q.longitude %></td>
+					<td><%= q.latitude %></td>
+				</tr>
+				<%end%>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
