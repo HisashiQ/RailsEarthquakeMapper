@@ -6,6 +6,8 @@
 * Google Maps (API KEY)
 * Materialize
 * jQuery
+* Ruby version 2.2.3
+* Rails version 5.0.2
 
 ### To set up the project:
 * Clone the repo
